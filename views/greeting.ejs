@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Boostrap css, js here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container-fluid col-md-12 col-12">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="/">
+                <img src="./images/logo.png" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-hover color-3" onclick="window.location.href='/signup'">Đăng kí</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id = slides>
+        <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+            <ol class="carousel-indicators">    
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item table .background active">
+                <img class="d-block w-100" id ="layer" src="./images/picture/caro1.jpg"  alt="First slide">
+            </div>
+            <div class="carousel-item table">
+                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro4.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item table">
+                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item table">
+                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro2.jpg" alt="Third slide">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class = 'caption col-md-12 col-sm-12'>
+        <div class="row row-no-gutter col-12 justify-content-md-center">
+            <div id = "search-area">
+                <img id="search" src="./images/search.png">
+                <svg class="Path_1" viewBox="0 0 686.153 85">
+                    <path fill="rgba(253,254,255,1)" id="Path_1" d="M 37.33865737915039 0 L 316.2581176757812 0 L 648.8140258789062 0 C 669.4356079101562 0 686.1527099609375 19.02789688110352 686.1527099609375 42.5 C 686.1527099609375 65.97210693359375 669.4356079101562 85 648.8140258789062 85 L 37.33865737915039 85 C 16.71708488464355 85 0 65.97210693359375 0 42.5 C 0 19.02789688110352 16.71708488464355 0 37.33865737915039 0 Z">
+                    </path>
+                </svg>
+                <input type="text" id="my-input-search" placeholder="Bạn đang tìm kiếm món ăn nào?">
+            </div>
+        </div>
+        <p class="font-weight-light">Hoặc</p>
+        <p style="margin-top: -0.5em; color:#000" >Tìm kiếm theo loại món ăn?</p>
+
+        <div class="group-category">
+            <div class="dropdown-group-category">
+            <div class="dropdown-group-category-name">Nhóm loại món ăn </div>
+                <div class="list">
+                    <div class="item">Option 1</div>
+                    <div class="item">Option 2</div>
+                    <div class="item">Option 3</div>
+                    <div class="item">Option 4</div>
+                    <div class="item">Option 5</div>
+                </div>
+                <span class = "icon-group">
+                <img src="./svg/arrow.svg" />
+                </span>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="dropdown-category">
+                <div class="dropdown-category-name">Loại món ăn </div>
+                <div class="list">
+                        <div class="item">Option 1</div>
+                        <div class="item">Option 2</div>
+                        <div class="item">Option 3</div>
+                        <div class="item">Option 4</div>
+                        <div class="item">Option 5</div>
+                    </div>
+                    <span class = "icon-category">
+                    <img src="./svg/arrow.svg" />
+                    </span>
+            </div>
+        </div>
+
+    </div>  
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='./js/greeting.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
