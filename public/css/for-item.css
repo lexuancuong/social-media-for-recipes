@@ -1,0 +1,303 @@
+/* Cho trang /item  */
+.container-info{
+    padding: 0%;
+}
+.tool-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: rgb(136,96,208,0.1);
+}
+.left-tool-bar{
+    width: 50%;
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+p#heading-tool-bar{
+    font-size: 1.7em;
+    font-weight: 500;
+    margin: 0;
+}
+p#heading-tool-bar span{ 
+    font-weight: 400;
+    font-size: 0.7em;
+    margin: 0;
+    border: 1px solid #8860D0;
+    position: relative;
+    padding-left: 0.2em;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    padding-right: 0.2em;
+    color: white;
+    top: -0.1em;
+}
+div.user-tool-bar{
+    padding: 0.1em;
+    width: 35%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+    border: 1px solid #8860D0;
+    border-radius: 1em;
+}
+p#username-toolbar{
+    margin: auto 0;
+}
+img#avatar-toolbar {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.2em;
+}
+.right-tool-bar{
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-arrow{
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: -0.5em;
+}
+
+.header-area{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: rgb(136,96,208,0.1);
+    margin-top: 0.7em;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.header-area img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.8em;
+}
+.header-area p{
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: auto 0;
+}
+
+
+.container-info{
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.18em 0 rgba(128, 128, 128, 0.7);
+    overflow:visible;
+}
+
+
+
+
+
+.ingredient-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Thêm nút tick cho item trong thành phần  */
+.custom-check {
+width: 45%;
+position: relative;
+display: flex;
+justify-content:flex-start;
+min-height: 3em;
+margin: 0.5em 0;
+display: flex;
+align-items: center;
+padding-left: 3%;
+margin-left: 5%;
+margin-top: 1em;
+}
+.custom-check>input {
+opacity: 0;
+vertical-align: middle;
+}
+.custom-check>label {
+color: rgba(0, 0, 0,1);
+cursor: pointer;
+vertical-align: middle;
+text-transform: none;
+}
+
+.custom-check>input+label:before {
+    position: absolute;
+    content: '';
+    top: 0.2em;
+    left: 0.4em;
+    width: 1.8em;
+    height: 1.8em;
+    background: url(../images/plus.png) center center no-repeat;
+    /* box-shadow: inset 0 1px 2px 2px rgba(193, 200, 228, 1), inset 0 0 0 1px #C1C8E4; */
+    box-shadow: 0 0 0.18em 0 #C1C8E4;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    display: inline-block;
+    vertical-align: middle
+}
+.custom-check>input:hover+label:before,
+.custom-check>input:focus+label:before {
+
+    box-shadow: inset 0 1px 2px 2px rgba(0, 0, 0, .1), inset 0 0 0 1px #C1C8E4;
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: 5%;
+
+    
+}
+
+.custom-check>input+label:after,  
+.custom-check>input+label:after {
+    content: '';
+
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+.custom-check>input:checked+label:after,
+.custom-check>input.checked+label:after {
+
+    opacity: 1
+}
+
+.custom-check>input[type=checkbox]+label:after,
+.custom-check>input[type=checkbox]+label:after {
+    width: 1.7em;
+    height: 1.7em;
+    top: 0.2em;
+    left: 0.3em;
+
+background: url(../images/checked.png) center center no-repeat;
+    background-size: 1.4em
+}
+
+.custom-check>input[type=checkbox]+label:before {
+    border-radius: 1em
+}
+
+.custom-check>input[type=checkbox]:checked+label:before,
+.custom-check>input[type=checkbox].checked+label:before {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .3), inset 0 0 0 0.8em #B4C7F7
+}
+
+.custom-check>input[type=checkbox]:checked:hover+label:before,
+.custom-check>input[type=checkbox].checked:hover+label:before,
+.custom-check>input[type=checkbox]:checked:focus+label:before,
+.custom-check>input[type=checkbox].checked:focus+label:before {
+box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), inset 0 0 0 0.8em #C1C8E4;
+}
+
+.custom-check>input:disabled+label,
+.custom-check>input.disabled+label {
+opacity: 1
+}
+
+.custom-check>input:disabled:checked+label:before,
+.custom-check>input:disabled.checked+label:before,
+.custom-check>input.disabled:checked+label:before,
+.custom-check>input.disabled.checked+label:before {
+box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), inset 0 0 0 0.8em #999
+}
+
+.step-direction{
+    width: 100%;
+    overflow:visible;
+}
+
+.image-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    background-color: rgb(193 ,200,228,0.1);
+}
+.image-area img{
+    width: 60%;
+}
+
+.Rectangle_122_h {
+    position: absolute;
+    overflow: visible;
+    width: 90%;
+    height: 1px;
+}
+div.bottom-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+div.bottom-bar img{
+    margin: 1em 3em 1em 3em;
+    width: 3em;
+    height: 3em;
+    display: block;
+    position: relative;
+}
+
+#img-lotus{
+    background-image: url ('/image/lotus.png') no-repeat;
+    display: block;
+
+}
+#img-comment1{
+    background-image: url ('/image/comment.png') no-repeat;
+    display: block;
+
+}
+
+#btn-lotus1::after{
+    content: "Hoa Sen";
+    display: block;
+}
+#btn-comment1::after{
+    content: "Đánh giá";
+    display: block;
+
+}
+.btn1 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 0.5em;
+}
+.img-item1{
+    width: 3em !important;
+    height: 3em !important;
+    margin: 0px;
+}
+
+
+.comment-area{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(193,200,228,0.18);
+}
+.comment-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}

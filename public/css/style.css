@@ -91,7 +91,7 @@ body{
 }
 .btn-hover.color-3 {
     background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);;
+    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);
 }
 
 .caption{
@@ -181,9 +181,6 @@ div.dropdown-group-category {
     position: relative;
     border-radius: 2em;
     margin-top: -5em;
-}
-div.dropdown-group-category::after{
-    
 }
 
 div.dropdown-group-category > div.dropdown-group-category-name {
@@ -424,6 +421,10 @@ div.content-signup{
 	font-size:12px;
 }
 
+
+.container-info{
+    
+}
 
 
 /* Nút tròn trong màn hình signup */

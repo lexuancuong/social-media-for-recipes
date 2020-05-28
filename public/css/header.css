@@ -1,0 +1,232 @@
+.navbar{
+    box-shadow: 0 0 0.3em 0 rgba(128, 128, 128, 0.7);;
+}
+.navbar-nav{
+    height: 5em; 
+    position: relative;   
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    position: relative;
+}
+.navbar{
+    position: relative;
+    top:0em;
+}
+.active{
+    margin-top: 0.9em;
+}
+.active a.nav-link{
+    padding-bottom: 0.8em;
+    border-bottom: 0.4em solid transparent;
+    border-image: linear-gradient(to right, #8860D0 , #5680E9);
+    border-image-slice: 1;
+}
+
+input.form-control{
+    border: none;
+    border-radius: 1em;
+    background-color: #fff;
+    width: 90vh;
+}   
+.form-inline{
+    left: 5em;
+    background-color: #fff;
+    border: 1.4px solid #8860D0;
+    border-radius: 1em;
+    overflow:hidden;
+}
+.input-group-text{
+    background-color: #fff;
+    border: none;
+    border-radius: 1em;
+}
+input.form-control{
+    outline-width: 0;
+    border: none;
+    border-radius: 1em;
+    margin-right: 0;
+}
+input.form-control:focus{
+    outline-width: 0 !important;
+    border: none !important;
+    
+}
+div.input-group{
+    width:100vh !important;
+}
+.navbar{
+    height: 4em;
+}
+
+.Rectangle_17 {
+    position: absolute;
+    overflow: hidden;
+    width: 3px;
+    height: 4.5em;
+    top: 0;
+}
+#btn-noti{
+    margin-left: auto;
+}
+div.noti-area{
+    display: flex;
+    align-items: center;
+    width: 3em !important;
+}
+
+.nav-item{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
+
+/* Cấu hình cho dropdown-profile list */
+
+div.dropdown-profile {
+    position: relative;
+    border-radius: 2em;
+    top: 0;
+    z-index: 0.9;
+    width: 15em;
+    border: 1.4px solid #8860D0;
+    border-radius: 1em;
+}
+
+#avatar {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: visible;
+    border-radius: 50%;
+    z-index: 1.5 !important;
+    align-items: center;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.dropdown-profile-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1em;
+    z-index: 1;
+    position: relative;
+    width: 10em;
+    height: 3em;
+
+}
+
+
+
+div.dropdown-profile > div.dropdown-profile-name {
+    padding: 11px 24px;
+    cursor: pointer;
+    width: 15em;
+    z-index: 0.8;
+}
+div.caption::after{
+    background-image: url("./svg/arrow.svg");
+    z-index: 1;
+
+}
+
+div.dropdown-profile div.dropdown-profile-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+
+}
+
+div.dropdown-profile > div.list {
+    margin-top: 0.2em;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    display: none;
+    border-radius: 1em;
+    z-index: 1;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+div.item p{
+    margin: 0;
+    margin-left: 1em;
+}
+div.dropdown-profile > div.list > div.item {
+    padding: 11px 24px;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    padding-left: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+div.dropdown-profile > div.list > div.item.selected {
+    font-weight: bold;
+    z-index: 1;
+}
+
+div.dropdown-profile > div.dropdown-profile-name:hover{
+    z-index: 1;
+}
+div.dropdown-profile > div.list > div.item:hover {
+    background-color: #8860D0; 
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+
+}
+
+div.dropdown-profile.open > div.dropdown-profile-name {
+    border-radius: 1em 1em 0 0;
+    z-index: 1;
+}
+
+div.dropdown-profile.open > div.list {
+    display: block;
+    z-index: 1;
+    margin-top: 0.5em;
+    border: 1px solid #8860D0;
+}
+
+.icon-group {
+    flex: auto;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    right: 0;
+    margin-top: -2em;
+    margin-right: 1em;
+    z-index: 1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.rotate {
+    margin-top: -2.3em;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+}
+
+/* Cài đặt hover cho các mục chọn trong list item */
+div.list #item-user:hover{
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);;
+    width: 100%;
+}

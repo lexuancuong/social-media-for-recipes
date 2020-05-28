@@ -35,3 +35,15 @@ app.get("/home",function(req,res)
 {
     res.render('home');
 });
+
+//Item
+app.get("/item",function(req,res)
+{
+    res.render('item');
+});
+
+//Comment
+app.get("/comment",function(req,res)
+{
+    res.render('comment');
+});
