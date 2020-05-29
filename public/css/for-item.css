@@ -34,7 +34,7 @@ p#heading-tool-bar span{
 }
 div.user-tool-bar{
     padding: 0.1em;
-    width: 35%;
+    width: fit-content;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -42,13 +42,14 @@ div.user-tool-bar{
     margin-bottom: 0.5em;
     border: 1px solid #8860D0;
     border-radius: 1em;
+    padding-right: 2%;
 }
 p#username-toolbar{
     margin: auto 0;
 }
 img#avatar-toolbar {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     margin-right: 0.2em;
 }
@@ -297,7 +298,68 @@ div.bottom-bar img{
     width: 80%;
     margin: 0 auto;
     padding-top: 1em;
-    background-color: white;
     display: flex;
     flex-direction: column;
+}
+.comment-item{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 0.8em;
+    box-shadow: 0 0 0.18em 0 rgba(128, 128, 128, 0.4);
+    padding: 1% 2% 0% 2%;
+    margin-bottom: 1em;
+}
+.with1{
+    width: fit-content !important;
+    padding-right: 2% !important;
+}
+p#UserComment{
+    margin-bottom: 0 !important;
+}
+.comment-item #timeUserComment{
+    font-size: 0.6em;
+    align-self: flex-end;
+    margin-right: 2%;
+}
+.witdh-config{
+    width: 100%;
+}
+
+.comment-write-area{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #8860D0;
+    border-radius: 1em;
+    padding: 1%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.comment-write-area input{  
+    margin-left: 1%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+.comment-back-area{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.comment-back-area p{
+    margin-bottom: 0 !important;
+    margin: 0 2em 0 0.5em;
+}
+.comment-back-area #backbtn{
+    width: 1.5em;
+    height: 1.5em;
+    transform: rotate(-180deg);
 }

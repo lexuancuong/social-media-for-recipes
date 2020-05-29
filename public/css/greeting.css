@@ -1,0 +1,259 @@
+
+.container-fluid{
+    margin: 0 !important;
+}
+.container-area{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#my-input-search{
+    width: 20em;
+    border: none !important;
+    border-color: transparent !important;
+}
+#my-input-search:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.font-weight-light{
+    margin-top: 1em;
+    color: #fff;
+    font-family: Helvetica Neue;
+}
+img#search-image{
+    width: 2em;
+    height: 2em; 
+    margin-right: 1em;   
+}
+div#search-area{
+    width: 35em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 1em 0% 1em 2em;
+    margin: 0 auto;
+    border-radius: 2em;
+    border: none;
+    box-shadow: 0em 0em 1em 0 rgba(128, 128, 128, 1);
+}
+
+
+
+
+/* Cấu hình cho các nút dropdown */
+.dropdown-group-category-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin: 0em auto;
+    z-index: 1;
+    position: relative;
+    width: 20em;
+    height: 3em;
+}
+
+/* Cấu hình cho dropdown-group-category list */
+div.group-category {
+    margin-right: 0 !important;
+    width: 20em;
+    background-color: transparent;
+    border-radius: 2em;
+    z-index: 1;
+}
+
+div.dropdown-group-category {
+    position: relative;
+    border-radius: 2em;
+}
+
+div.dropdown-group-category > div.dropdown-group-category-name {
+    background-color: #84CEEB;
+    padding: 11px 24px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+div.caption::after{
+    background-image: url("./svg/arrow.svg");
+    z-index: 1;
+}
+
+div.dropdown-group-category div.dropdown-group-category-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+
+}
+
+div.dropdown-group-category > div.list {
+    position: absolute;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    display: none;
+    border-radius: 0 0 1em 1em;
+    z-index: 1;
+
+}
+
+div.dropdown-group-category > div.list > div.item {
+    padding: 11px 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div.dropdown-group-category > div.list > div.item.selected {
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+div.dropdown-group-category > div.dropdown-group-category-name:hover,
+div.dropdown-group-category > div.list > div.item:hover {
+    background-color: rgb(83, 161, 214);
+    color: #fff;
+    z-index: 1;
+
+}
+
+div.dropdown-group-category.open > div.dropdown-group-category-name {
+    border-radius: 1em 1em 0 0;
+    border-bottom: solid 1px #999;
+    z-index: 1;
+
+    
+}
+
+div.dropdown-group-category.open > div.list {
+    display: block;
+    z-index: 1;
+
+}
+
+
+/* ////////////////////////////// */
+
+/* Cấu hình cho dropdown-group-category list */
+div.category {
+    width: 20em;
+    border-radius: 2em;
+    z-index: 0.5;
+    margin-top: 1.5em;
+}
+
+div.dropdown-category {
+    position: relative;
+    border-radius: 2em;
+}
+div.dropdown-category::after{
+    
+}
+
+div.dropdown-category > div.dropdown-category-name {
+    background-color: #C1C8E4;
+    padding: 0.7em 1.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+div.caption::after{
+    background-image: url("./svg/arrow.svg");
+}
+
+div.dropdown-category div.dropdown-category-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+div.dropdown-category > div.list {
+    position: absolute;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    display: none;
+    border-radius: 0 0 1em 1em;
+}
+
+div.dropdown-category > div.list > div.item {
+    padding: 11px 24px;
+    cursor: pointer;
+}
+
+div.dropdown-category > div.list > div.item.selected {
+    font-weight: bold;
+}
+
+div.dropdown-category > div.dropdown-category-name:hover,
+div.dropdown-category > div.list > div.item:hover {
+    background-color: #B1B7D0;
+    color: #fff;
+}
+
+div.dropdown-category.open > div.dropdown-category-name {
+    border-radius: 1em 1em 0 0;
+    border-bottom: solid 1px #999;
+    
+}
+
+div.dropdown-category.open > div.list {
+    display: block;
+}
+
+.icon-category  {
+    flex: auto;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    margin-top: -2.1em;
+    right: 0;
+    margin-right: 2em;
+    z-index: 0.5;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.icon-group {
+    flex: auto;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    margin-top: -2.1em;
+    right: 0;
+    margin-right: 2em;
+    z-index: 1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+.rotate {
+    margin-top: -2.3em;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+}
+
+#text-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

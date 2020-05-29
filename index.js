@@ -47,3 +47,15 @@ app.get("/comment",function(req,res)
 {
     res.render('comment');
 });
+
+//My recipe pages route
+app.get("/myrecipe",function(req,res)
+{
+    res.render('myrecipe');
+});
+
+//Recommend
+app.get("/recommend",function(req,res)
+{
+    res.render('recommend');
+});

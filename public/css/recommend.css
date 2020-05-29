@@ -1,0 +1,128 @@
+.all-card-container{
+    width: 100%;
+    padding: 1%;;
+}
+.all-card-container .order-number{
+    border-radius: 50%;
+    border: 1px solid #C1C8E5;
+    width: 2em;
+    height: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: transparent;
+    color: #C1C8E5;
+}
+
+.recommend-area{
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.recommend-area .input-area{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-left: 0.4em solid transparent;
+    border-image: linear-gradient(to bottom, #8860D0 , #5680E9); 
+    border-image-slice: 1; 
+    padding-left: 2%;
+}
+.recommend-area .input-area input{
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(136, 96, 208, 58);
+    text-align: center;
+
+}
+.recommend-area .input-area input:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.recommend-area .input-area input ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+.recommend-area .input-area input :-moz-placeholder {
+    text-align: center;
+}
+
+.group-category{
+    width: 8em !important;
+    height: 2.5em !important;
+}
+.dropdown-group-category-name{
+    width: 8em !important;
+    height: 2.5em !important;
+
+}
+
+.input-area select{
+    margin-top: 2%;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    border-bottom: 1px solid rgba(136, 96, 208, 58);
+}
+.recommend-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+.btn-recommend {
+    width: 8em;
+    height: 3em;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-recommend:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-recommend:focus {
+    outline: none;
+}
+.btn-recommend.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);
+}
+.text-for-label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+}
+.text-for-label p{
+    padding: 1%;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin: 0;
+    border: 1px solid #8860D0; 
+}

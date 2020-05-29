@@ -27,7 +27,6 @@ $(function(){
     if ( $(evt.target).closest(".dropdown-group-category > .dropdown-group-category-name").length === 0 ) {
       $('.dropdown-group-category').removeClass('open');
       $('.icon-group').removeClass('rotate');
-
     }
   }); 
 });

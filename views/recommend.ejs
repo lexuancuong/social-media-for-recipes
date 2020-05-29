@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head") -%> 
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/mainstyle.css" rel="stylesheet">
+    <link href="./css/home.css" rel="stylesheet">
+    <link href="./css/myrecipe.css" rel="stylesheet">
+    <link href="./css/recommend.css" rel="stylesheet">
+    <script>
+        $( document ).ready(function() {
+    $('.clickToggle').click(function() {
+        $(this).children('div').toggleClass('imgPlus imgMinus');
+    });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Load thư viện vào tập tin  -->
+        <%- include("./partials/header") -%> 
+
+        <div class="row col-md-12 pt-2 background-custom">
+            <div class="col-md-2 show-category pr-3 pl-3">
+                <div class="user-area">
+                    <img src ="./images/avatar.jpg">
+                    <p class = "username">Lê Xuân Cường</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-8 p-2">
+
+                <div class="text-for-label">
+                    <p>GỢI Ý MÓN ĂN</p>
+                </div>
+
+                <div class="recommend-area">
+                    <div class="input-area">
+                        <label for = 'input-serving'> Khẩu phần</label>
+                        <input type="text" placeholder="1" id = input-serving>
+                    </div>
+                    <div class="input-area">
+                        <label for = 'input-serving'>Năng lượng</label>
+                        <input type="text" placeholder="1" id = input-serving>
+                    </div>
+                    <div class="input-area">
+                        <label for = 'input-serving'>Loại bữa ăn</label>
+                        <select name="Bữa sáng " id="type-meal">
+                            <option value="1">Bữa Sáng</option>
+                            <option value="2">Bữa Trưa</option>
+                            <option value="2">Bữa tối</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="recommend-btn">
+                    <button class="btn-recommend color-3" onclick="window.location.href='/signup'">Gợi ý</button>
+                </div>
+
+                <div class="all-card-container">
+                <div class = "card-container">
+                    <img width="90%" src="./images/imagecard.png"> 
+                    <div class = "list-item">
+                        <button class="btn" id="btn-lotus"><img class = 'img-item' src="./images/lotus.png"></img></button>
+                        <button class="btn" id="btn-clock"><img class = 'img-item' src="./images/clock.png"></img></button>
+                        <button class="btn" id="btn-team"><img class = 'img-item' src="./images/team.png"></img></button>
+                        <button class="btn" id="btn-fire"><img class = 'img-item' src="./images/fire.png"></img></button>
+                    </div>
+                    <div class="text-card-area">
+                        <p class = "text-card">Canh cua đồng nấu cải </p>
+                    </div>
+                    <button class="order-number">
+                        1 
+                    </button>
+                </div>
+
+                <div class = "card-container">
+                    <img width="90%" src="./images/imagecard.png"> 
+                    <div class = "list-item">
+                        <button class="btn" id="btn-lotus"><img class = 'img-item' src="./images/lotus.png"></img></button>
+                        <button class="btn" id="btn-clock"><img class = 'img-item' src="./images/clock.png"></img></button>
+                        <button class="btn" id="btn-team"><img class = 'img-item' src="./images/team.png"></img></button>
+                        <button class="btn" id="btn-fire"><img class = 'img-item' src="./images/fire.png"></img></button>
+                    </div>
+                    <div class="text-card-area">
+                        <p class = "text-card">Canh cua đồng nấu cải </p>
+                    </div>
+                    <button class="order-number">
+                        2 
+                    </button>
+                </div>
+
+                <div class = "card-container">
+                    <img width="90%" src="./images/imagecard.png"> 
+                    <div class = "list-item">
+                        <button class="btn" id="btn-lotus"><img class = 'img-item' src="./images/lotus.png"></img></button>
+                        <button class="btn" id="btn-clock"><img class = 'img-item' src="./images/clock.png"></img></button>
+                        <button class="btn" id="btn-team"><img class = 'img-item' src="./images/team.png"></img></button>
+                        <button class="btn" id="btn-fire"><img class = 'img-item' src="./images/fire.png"></img></button>
+                    </div>
+                    <div class="text-card-area">
+                        <p class = "text-card">Canh cua đồng nấu cải </p>
+                    </div>
+                    <button class="order-number">
+                        3
+                    </button>
+                </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-2 add-container pl-5">
+                <div class = "btn-add-new">
+                    <button class="btn-hover color-3" onclick="window.location.href='/signup'"></button>
+                    <p>Tạo món ăn mới</p>
+                </div>
+            </div>
+         </div>
+
+        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src='./js/greeting.js'></script> -->
+    <script src='./js/home.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
+
