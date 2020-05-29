@@ -1,6 +1,7 @@
 .all-card-container{
     width: 100%;
-    padding: 1%;;
+    padding: 1%;
+    display: none;
 }
 .all-card-container .order-number{
     border-radius: 50%;
@@ -15,7 +16,7 @@
 
 .recommend-area{
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -120,9 +121,32 @@
     margin: 1em auto;
 }
 .text-for-label p{
-    padding: 1%;
-    font-size: 1.7em;
+    display: inline;
+    width: 7.7em;
+    padding: 0.5%;
+    font-size: 1.6em;
     font-weight: 500;
     margin: 0;
     border: 1px solid #8860D0; 
+    margin-bottom: 1em;
+}
+.recommend-area-container{
+    margin-top: 10%;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    align-self: center;
+}
+
+
+.modal-content p{
+    font-weight: 500;
+    font-size: 1.2em;
 }

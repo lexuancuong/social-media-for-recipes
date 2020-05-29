@@ -21,6 +21,23 @@
         <!-- Load thư viện vào tập tin  -->
         <%- include("./partials/header") -%> 
 
+        <button type="button" id="btnTrigger" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="display: none;">
+        </button>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                    <img src = './images/caution.png'>
+                    <p>
+                        Đảm bảo rằng bạn có đủ số lượng món ăn để đưa ra gợi ý
+                    </p>
+                    <button type="button" class="btn-recommend color-3"  data-dismiss="modal">Đồng ý</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
         <div class="row col-md-12 pt-2 background-custom">
             <div class="col-md-2 show-category pr-3 pl-3">
                 <div class="user-area">
@@ -30,7 +47,7 @@
             </div>
 
 
-            <div class="col-md-8 p-2">
+            <div class="col-md-8 p-2 recommend-area-container">
 
                 <div class="text-for-label">
                     <p>GỢI Ý MÓN ĂN</p>
@@ -56,8 +73,9 @@
                 </div>
 
                 <div class="recommend-btn">
-                    <button class="btn-recommend color-3" onclick="window.location.href='/signup'">Gợi ý</button>
+                    <button class="btn-recommend color-3">Gợi ý</button>
                 </div>
+
 
                 <div class="all-card-container">
                 <div class = "card-container">
@@ -125,6 +143,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src='./js/greeting.js'></script> -->
     <script src='./js/home.js'></script>
+    <script src='./js/recommend.js'></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
