@@ -1,0 +1,233 @@
+.recipe-info{
+    width: 100%;
+    margin: 1%;
+    background-color: #fff;
+    border-radius: 1em;
+    padding-bottom: 3%;
+    overflow: hidden;
+    box-shadow: 0 0 0.18em 0 rgba(128, 128, 128, 0.4);
+    margin-bottom: 2%;
+}
+
+.header-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header p{
+    margin-bottom: 1%;
+}
+.typing--header{
+    font-size: 2em;
+    align-self: center;
+}
+.recipe-info .header{
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 2%;
+    background-color: rgb(136, 96, 209, 0.1);
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 0.1% !important;
+    vertical-align: center;
+}
+.recipe-info .card-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 0.3em solid transparent;
+    border-image: linear-gradient(to bottom,rgba(86,128,233,0.58) , rgba(145,105,216,0.61)); 
+    border-image-slice: 1; 
+    padding-left: 2%;
+}
+.recipe-info .card-input p{
+    font-weight: 600;
+}
+.with__40 input{
+    width: 40%;
+}
+.input-text{
+    margin-top: -.5em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(136, 96, 208, 58);
+    text-align: left;
+
+}
+.recipe-info .card-input input:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.recipe-info .card-input input ::-webkit-input-placeholder {
+    text-align: left;
+  }
+  
+.recipe-info .card-input input :-moz-placeholder {
+    text-align: left;
+}
+
+.card-input select{
+    margin-top: 2%;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    border-bottom: 1px solid rgba(136, 96, 208, 58);
+}
+.card-input select:focus{
+    outline: 0;
+}
+
+.multi-card-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+
+/* Viết CSS cho phần nhập Gradient */
+.input-ingredient-area{
+    display: flex;
+    flex-direction: row;
+}
+#btn-add-gradient{
+    background-color: transparent;
+    border: 1px solid rgba(136, 96, 208, 58);
+    border-radius: 1em;
+    height: 2.5em;
+    width: 6em;
+    cursor: pointer;
+
+}
+#btn-add-gradient:hover{
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    color: white;
+    box-shadow: 0 0.2em 0.5em 0 rgba(0, 0, 0, 0.7);
+
+}
+.input-type{
+    height: 2.5em;
+    width: 50%;
+    border-radius: 1em;
+    border: 1px solid rgba(136, 96, 208, 58);
+    margin-right: 2%;
+    padding: 2%;
+}
+
+/* Cấu hình cho phần text thứ tự  */
+.order-number-container{
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    margin-right: 1em;
+    background-color: #E7E8F3;
+}
+#order-number{
+    margin: auto auto ;
+    font-weight: 600;
+    color: #8E37D7; 
+}
+
+.ingredient-area{
+    margin-top: 2%;
+}
+.ingredient-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+    vertical-align:center;
+    align-items: center;
+
+}
+.ingredient-card p{
+    margin: auto 0;
+    margin-right: 1em;
+    width: fit-content;
+    max-width: 70%;
+    display: inline !important;
+}
+.btn-ingredient-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.btn-ingredient-area button{
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #E7E8F3;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    align-content: center;
+}
+.btn-ingredient-area button :hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-ingredient-area button img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+#input-direction{
+    width: 60%;
+    border-radius: 1em;
+    border: 1px solid rgba(136, 96, 208, 58);
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+.input-gradient-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload-image-area{
+    cursor: pointer;
+    width: 13em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 1em;
+    border-radius: 1em;
+    border: 1px solid rgba(136, 96, 208, 58);
+}
+.upload-image-area button{
+    border: none;
+    outline: none;
+    margin:auto 0;
+    background-color: transparent;
+}
+.upload-image-area button img{
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+}
+.upload-image-area p{
+    margin: 0;
+    margin-right: 1em;
+}

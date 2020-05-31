@@ -59,3 +59,15 @@ app.get("/recommend",function(req,res)
 {
     res.render('recommend');
 });
+
+//Post recipe page's route
+app.get("/post-recipe",function(req,res)
+{
+    res.render('post-recipe');
+});
+
+//view user's profile
+app.get("/myprofile",function(req,res)
+{
+    res.render('myprofile');
+});

@@ -72,6 +72,9 @@
     width: fit-content;
     border-bottom: 1px solid rgba(136, 96, 208, 58);
 }
+.input-area select:focus{
+    outline: 0;
+}
 .recommend-btn{
     width: 100%;
     display: flex;
@@ -143,6 +146,8 @@
     padding: 5%;
     width: 100%;
     align-self: center;
+    border-radius: 1.5em !important;
+
 }
 
 

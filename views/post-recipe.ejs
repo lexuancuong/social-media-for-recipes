@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head") -%> 
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/myrecipe.css" rel="stylesheet">
+    <link href="./css/post-recipe.css" rel="stylesheet">
+    <link href="./css/recommend.css" rel="stylesheet">
+
+    <script>
+        $( document ).ready(function() {
+    $('.clickToggle').click(function() {
+        $(this).children('div').toggleClass('imgPlus imgMinus');
+    });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Load thư viện vào tập tin  -->
+        <%- include("./partials/header") -%> 
+        <div class="row col-md-12 pt-2 background-custom">
+            <div class="col-md-2 show-category pr-3 pl-3">
+                <div class="user-area">
+                    <img src ="./images/avatar.jpg">
+                    <p class = "username">Lê Xuân Cường</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-8 p-2 type-infor mr-0">
+
+
+                <!-- Tiêu đề -->
+                <div class = "header-area">
+                    <p class="typing--header">
+                        NHẬP THÔNG TIN MÓN ĂN
+                    </p>
+                </div>
+
+
+                <!-- Mục nhập đầu tiên: Thông tin món ăn -->
+                <div class="recipe-info">
+                    <div class="header">
+                        <p>THÔNG TIN MÓN ĂN</p>
+                    </div>
+                    <div class="card-input with__40" >
+                        <p>Tên món ăn</p>
+                        <input type="text" class = "input-text" placeholder="Nhập tên món ăn" id = "input-serving"> 
+                    </div>
+
+                    <div class="multi-card-input">
+                        <div class="card-input with__40" >
+                            <p>Thời gian</p>
+                            <input type="text" class = "input-text" placeholder="0" id = "input-serving"> 
+                        </div>
+                        <div class="card-input with__40" >
+                            <p>Khẩu phần</p>
+                            <input type="text" class = "input-text" placeholder="0" id = "input-serving"> 
+                        </div>
+                        <div class="card-input with__40" >
+                            <p>Năng lượng</p>
+                            <input type="text" class = "input-text" placeholder="0" id = "input-serving"> 
+                        </div>
+                        <div class="card-input">
+                            <label for = 'input-serving'>Loại bữa ăn</label>
+                            <select name="Bữa sáng " id="type-meal">
+                                <option value="1">Bữa Sáng</option>
+                                <option value="2">Bữa Trưa</option>
+                                <option value="2">Bữa tối</option>
+                            </select>
+                        </div>
+                        <div class="card-input">
+                            <label for = 'input-serving'>Quốc gia</label>
+                            <select name="Bữa sáng " id="type-meal">
+                                <option value="1">Bữa Sáng</option>
+                                <option value="2">Bữa Trưa</option>
+                                <option value="2">Bữa tối</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Mục nhập các thành phần món ăn -->
+                <div class="recipe-info">
+                    <div class="header">
+                        <p>NGUYÊN LIỆU</p>
+                    </div>
+                    <div class="card-input with__40" >
+                        <p>Nguyên liệu 1</p>
+                        <div class="input-gradient-area">
+                            <input type="text" placeholder="Nhập tên món ăn" class = "input-type" id = 'input-ingredient'> 
+                            <button id = 'btn-add-gradient'>Thêm</button>
+                        </div>
+                    </div>
+                    <div class="ingredient-area">
+                        <div class="ingredient-card">
+                            <div class="order-number-container">
+                                <p id="order-number">1</p>
+                            </div>
+                            <p> 1 cup all-purpose asdasdas</p>
+                            <div class="btn-ingredient-area">
+                                <button class = "edit-ingredient">
+                                    <img src="./images/edit.png">
+                                </button>
+                                <button class = "remove-ingredient">
+                                    <img src="./images/delete.png">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Mục nhập các bước để nấu một món ăn -->
+                <div class="recipe-info">
+                    <div class="header">
+                        <p>THỰC HIỆN</p>
+                    </div>
+                    <div class="card-input with__40" >
+                        <p>Nguyên liệu 1</p>
+                        <div class="input-gradient-area">
+                            <textarea type="text" placeholder="Nhập tên món ăn" rows="3" class = "input-textarea" id = 'input-direction'></textarea>
+                            <button id = 'btn-add-gradient'>Thêm</button>
+                        </div>
+                    </div>
+                    <div class="ingredient-area">
+                        <div class="ingredient-card">
+                            <div class="order-number-container">
+                                <p id="order-number">1</p>
+                            </div>
+                            <p> Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whiskegg and butter into "soured" milk. Pour the flour mixture into the wet ingredients and whiskuntil lumps are gone</p>
+                            <div class="btn-ingredient-area">
+                                <button class = "edit-ingredient">
+                                    <img src="./images/edit.png">
+                                </button>
+                                <button class = "remove-ingredient">
+                                    <img src="./images/delete.png">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                 <!-- DOWNLOAD IMGAE FROM PC -->
+                 <div class="recipe-info">
+                    <div class="header">
+                        <p>HÌNH ẢNH</p>
+                    </div>
+                    <div class = "upload-image-area"  onclick="document.getElementById('getFile').click()"">
+                        <p>Tải hình ảnh lên</p>
+                        <button onclick="document.getElementById('getFile').click()">
+                            <img src="./images/data.png">
+                        </button>
+                        <img>
+                    </div>              
+                    <input type='file' id="getFile" style="display:none">      
+                </div>
+                <div class="recommend-btn">
+                    <button class="btn-recommend color-3" style="margin-top: 1em;">Xong</button>
+                </div>
+            </div>
+
+            <div class="col-md-2 add-container pl-5">
+            </div>
+         </div>
+
+        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src='./js/greeting.js'></script> -->
+    <script src='./js/home.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
+
