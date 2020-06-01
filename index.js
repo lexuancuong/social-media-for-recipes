@@ -71,3 +71,9 @@ app.get("/myprofile",function(req,res)
 {
     res.render('myprofile');
 });
+
+// Page for setting
+app.get("/setting",function(req,res)
+{
+    res.render('setting');
+});

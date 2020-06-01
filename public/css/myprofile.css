@@ -139,3 +139,51 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+.btn-hover {
+    width: 14em;
+    height: 3em;
+    font-size: 1 em;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.next-page{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: center;
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+}
+.next-page p{
+    cursor: pointer;
+
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+    margin-right: 0.5em;
+}
+.next-page p span{
+    font-weight: 600;
+}
+.next-page img{
+    cursor: pointer;
+    height: 1.5em;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
