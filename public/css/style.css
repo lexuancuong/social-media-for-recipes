@@ -19,6 +19,7 @@ html{
 body{
     position: relative;
     margin: 0 !important;
+    width: 100vw;
 }
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -216,10 +217,11 @@ div.content-signup{
 
 /* Nút tròn trong màn hình signup */
 .custom-check {
+    align-self: flex-start;
     position: relative;
     display: block;
     min-height: 42px;
-    margin: 10px 0;
+    margin: 2% 0 1% 12%;
   }
 .custom-check>input {
 opacity: 0;

@@ -61,9 +61,9 @@ app.get("/recommend",function(req,res)
 });
 
 //Post recipe page's route
-app.get("/post-recipe",function(req,res)
+app.get("/postrecipe",function(req,res)
 {
-    res.render('post-recipe');
+    res.render('postrecipe');
 });
 
 //view user's profile

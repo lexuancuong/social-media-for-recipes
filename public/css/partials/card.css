@@ -1,0 +1,153 @@
+@media screen and (min-width: 768px) {
+    .btn-add-new{
+        width: 100%;
+        height: 5rem;
+        position: fixed;
+        top: 80%;
+        left: 88%;
+        /* right: 0; */
+    }  
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+    .btn-add-new{
+        width: 100%;
+        height: 5rem;
+        position: fixed;
+        top: 80%;
+        left: 85%;
+        /* right: 0; */
+    }  
+}
+div.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 1.5%;
+    width: 32%;
+    height: fit-content !important;
+    overflow: visible;
+    /* border: solid 1px #000;  */
+    margin: 0.66%;
+    box-shadow: 0 0 0.2em 0 rgba(128, 128, 128, 0.7);
+}
+.text-card-area{
+    width: 100%;
+    background-color: rgb(136, 96, 209, 0.1);
+    text-align: center;
+    padding: 0.1em 0 0.1em 0;
+}
+p.text-card{
+    font-weight: 450;
+    font-size: 1.2rem;
+    display: inline;
+    margin: 0 auto;
+}
+.all-card-container{
+    display: flex;
+    padding: 1%;
+    background-color: #fff;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.18em 0 rgba(128, 128, 128, 0.7);
+    overflow:visible;
+    z-index: 0.9;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+    padding-top: 0 !important;
+}
+.img-item{
+    width: 1.6em !important;
+    height: 1.6em !important;
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+
+}
+#btn-lotus::after{
+    content: "10";
+    font-size: 0.7rem;
+    display: block;
+}
+#btn-clock::after{
+    content: "20 phút";
+    font-size: 0.7rem;
+
+    display: block;
+}
+#btn-team::after{
+    content: "2 người";
+    font-size: 0.7rem;
+
+    display: block;
+}
+#btn-fire::after{
+    content: "100 cals";
+    font-size: 0.7rem;
+
+    display: block;
+}
+.item-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-after{
+    align-self: center;
+    height:3rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    justify-content: center;
+}
+.plusbtn{
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 1rem; 
+    left: 1rem;
+}
+
+.add-container{
+    position: relative;
+}
+.btn-add-new p{
+    position: absolute;
+    bottom: -2rem;
+    left: -1rem;
+    margin: 0 auto;
+    align-self: center;
+    font-weight: medium;
+    color: rgb(2,2,2,0.4);
+}
+
+.show-category-container{
+    width: 16%;
+    position: fixed;
+    top: 15%;
+    text-align: center;
+}
+
+#btn-lotus-template::after{
+    content: "Hoa Sen" !important;
+    display: block;
+}

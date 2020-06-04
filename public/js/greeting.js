@@ -49,7 +49,7 @@ $(function(){
     
     $('.dropdown-category > .list > .item').on('click', function() {
       $('.dropdown-category > .list > .item').removeClass('selected');
-      $(this).addClass('selected').parent().parent().removeClass('open').children('.dropdown-category-name').text( $(this).text() );
+      // $(this).addClass('selected').parent().parent().removeClass('open').children('.dropdown-category-name').text( $(this).text() );
     });
     
     $(document).on('keyup', function(evt) {

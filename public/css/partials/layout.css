@@ -39,6 +39,7 @@
     }
     .left-area{
         width: 0%;
+        display: none;
     }
     .main-area{
         width: 100%;
@@ -46,17 +47,4 @@
     .right-area{
         width: 0%;
     }
-}
-body{
-    margin: 0 !important;
-    padding: 0;
-}
-
-#btn-home{
-    border-bottom: 0.2em solid transparent;
-    border-image: linear-gradient(to right, #8860D0 , #5680E9); 
-    border-image-slice: 1; 
-}
-#btn-home p{
-    color: #000;
 }

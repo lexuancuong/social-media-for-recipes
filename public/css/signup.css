@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) {
+    *{
+      font-size: 16px;
+    }
+    .full-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-area{
+        width: 30%;
+        margin-top: 5%;
+    }
+    .content-signup{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .p10{
+        padding-top: 10%;
+    }
+    .support-area{
+        width: 20%;
+    }
+    .full-container{
+        height: 100vh;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 768px) {
+    *{
+      font-size: 12px;
+    }
+    .full-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-area{
+        width: 100%;
+    }
+    .content-signup{
+        width: 100%;
+    }
+    .support-area{
+        display: none;
+    }
+    .full-container{
+        height: fit-content;
+    }
+  }
+.full-container{
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/background.png");
+}
+.nav-area{
+    padding: 0% 2% 0% 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+}
+.nav-area a{
+    margin-top: 1%;
+    cursor: pointer;
+    z-index: 1.1 !important;
+}
+.full-content{
+    width: 100%;
+    justify-content: center;
+
+}
+
+.content-signup h1{
+    font-size: 2.5em;
+}

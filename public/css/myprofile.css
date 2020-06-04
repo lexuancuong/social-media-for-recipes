@@ -2,6 +2,9 @@
     *{
       font-size: 16px;
     }
+    .background-custom{
+        width: 70%;
+    }
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -11,8 +14,7 @@
       
     } 
     .background-custom{
-        width: 100% !important;
-        border-radius: 0em !important;
+        width: 100%;
     }
   }
 
@@ -31,11 +33,10 @@ body{
 * {
     font-family: Helvetica Neue !important;
 }
-.container-fluid{
-    margin: 0 !important;
+.nav-container{
+    margin-bottom: 0;
 }
 .background-custom{
-    width: 70%;
     display: flex;
     justify-self: center;
     align-items: center;

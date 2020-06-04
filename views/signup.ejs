@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Import Boostrap css, js here -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/signup.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <div class = "container-fluid color1">
-    <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top ">
-            <div class="container-fluid">
-                <a class="navbar-branch" href="/">
-                    <img src="./images/logo.png" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                    data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Giới thiệu</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="full-container">
+        <div class="nav-area">
+            <a href="/">
+                <img src="./images/logo.png" height="50">
+            </a>
+        </div>
 
 
 
 
-        <div class="row col-md-12">
-           <div class="col-md-5 logo-area">
+        <div class="full-content">
+            <div class="logo-area">
             <img src="./images/Logo-big.png" alt="Cooking is easy">
-           </div>
-           <div class="col-md-5 content-signup">
+            </div>
+            <div class="content-signup">
                 <h1>ĐĂNG KÍ</h1>
                 <p>Bạn đã có tài khoản CoCoCook.net? <span id = 'login-span'  onclick="window.location.href='/signin'">Đăng Nhập</span> </p>
 
@@ -65,20 +49,17 @@
                 <div class="custom-check">
                     <input id="q3" name="h" type="checkbox" />
                     <label for="q3">Tôi đồng ý vs các <span id = 'login-span'>Điều Khoản</span> của CoCoCook</label>
-                  </div>
+                    </div>
                 <button class="btn-hover color-3" onclick="window.location.href='/home'">Đăng kí</button>
-           </div>
-           <div class="col-md-2">
-           </div>
+            </div>
+            <div class="support-area">
+
+            </div>
         </div>
 
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src='./js/home.js'></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

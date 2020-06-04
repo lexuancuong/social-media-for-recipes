@@ -1,4 +1,9 @@
 
+.main-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .btn-function{
     display: flex;
     flex-direction: row;
