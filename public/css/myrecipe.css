@@ -1,3 +1,14 @@
+/* Cài đặt cho border bottom trên nav bar */
+#btn-myrecipe{
+    border-bottom: 0.2em solid transparent;
+    border-image: linear-gradient(to right, #8860D0 , #5680E9); 
+    border-image-slice: 1; 
+}
+#btn-myrecipe p{
+    color: #000;
+}
+
+
 
 .main-area{
     display: flex;
@@ -17,7 +28,7 @@
     cursor: pointer;
     border-radius: 0.5em;
     border: none;
-    background-color: #E7E8F3;
+    background-color: rgba(136, 96, 209, 0.1);
     width: 2em;
     height: 2em;
     margin-right: 0.5em;

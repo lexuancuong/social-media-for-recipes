@@ -38,15 +38,15 @@
           <img id="avatar" src="./images/avatar.jpg" alt="Avatar">
           <div class="dropdown-profile-name">Lê Xuân Cường</div>
           <div class="list">
-              <div class="item" id="item-user"> 
+              <div class="item" id="item-user" onclick="window.location.href='/myprofile'"> 
                 <img width="23" src="./images/user.png"> 
                 <p> Hồ sơ cá nhân</p>
               </div>
-              <div class="item" id ='item-setting'> 
+              <div class="item" id ='item-setting' onclick="window.location.href='/setting'"> 
                 <img width="23" src="./images/setting.png"> 
                 <p> Cài đặt</p>
               </div>
-              <div class="item" id = "item-out"> 
+              <div class="item" id = "item-out" onclick="window.location.href='/logout'"> 
                 <img width="23" src="./images/signout.png"> 
                 <p> Thoát</p>
               </div>
@@ -72,9 +72,9 @@
       <div class="menu">
         <div class="menu-name"> <img src = "./images/menu.png"> </div>
           <div class="list">
-                  <div class="item">Trang chủ</div>
-                  <div class="item">Gợi ý bữa ăn</div>
-                  <div class="item">Món ăn của tôi</div>
+                  <div class="item"  onclick="window.location.href='/home'">Trang chủ</div>
+                  <div class="item"  onclick="window.location.href='/recommend'">Gợi ý bữa ăn</div>
+                  <div class="item"  onclick="window.location.href='/myrecipe'">Món ăn của tôi</div>
           </div>
       </div>
     </div>

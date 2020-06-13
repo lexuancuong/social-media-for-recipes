@@ -9,7 +9,7 @@
     }  
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 768px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 768px) {
     .btn-add-new{
         width: 100%;
@@ -21,6 +21,7 @@
     }  
 }
 div.card-container{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-start;

@@ -19,6 +19,7 @@
 }
 .typing--header{
     font-size: 2em;
+    font-weight: 500;
     align-self: center;
 }
 .recipe-info .header{
@@ -165,7 +166,7 @@
     cursor: pointer;
     border-radius: 0.5em;
     border: none;
-    background-color: #E7E8F3;
+    background-color: rgba(136, 96, 209, 0.1);
     width: 2em;
     height: 2em;
     margin-right: 0.5em;

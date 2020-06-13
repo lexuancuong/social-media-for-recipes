@@ -136,7 +136,7 @@ body{
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0.1em 0.1em 0px #d2d2d22e;
-    background: -webkit-linear-gradient(#8860D0, #5680E9);
+    background: -webkit-linear-gradient(#5680E9,#8860D0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

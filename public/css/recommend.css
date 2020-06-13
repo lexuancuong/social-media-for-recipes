@@ -1,3 +1,13 @@
+/* Cài đặt cho border bottom trên nav bar */
+#btn-recommend{
+    border-bottom: 0.2em solid transparent;
+    border-image: linear-gradient(to right, #8860D0 , #5680E9); 
+    border-image-slice: 1; 
+}
+#btn-recommend p{
+    color: #000;
+}
+
 .all-card-container{
     width: 100%;
     padding: 1%;
@@ -75,63 +85,23 @@
 .input-area select:focus{
     outline: 0;
 }
-.recommend-btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
 
-}
-.btn-recommend {
-    width: 8em;
-    height: 3em;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-.btn-recommend:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-recommend:focus {
-    outline: none;
-}
-.btn-recommend.color-3 {
-    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);
-}
 .text-for-label{
-    width: 100%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    vertical-align: center;
     margin: 1em auto;
+    border: 1px solid #8860D0; 
+    margin-bottom: 3em;
 }
 .text-for-label p{
     display: inline;
-    width: 7.7em;
-    padding: 0.5%;
+    display: inline;
     font-size: 1.6em;
     font-weight: 500;
-    margin: 0;
-    border: 1px solid #8860D0; 
-    margin-bottom: 1em;
+    margin: auto 0;
 }
 .recommend-area-container{
     margin-top: 10%;
@@ -154,4 +124,30 @@
 .modal-content p{
     font-weight: 500;
     font-size: 1.2em;
+}
+/* Avatar area  */
+.user-area {
+    padding: 1em;
+    width: 100%;
+    height: fit-content;
+    border-radius: 1em;
+    background-color: #fff;
+    box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em ;
+    text-align: center;
+}
+.user-area img{
+    width: 100%;
+    border-radius: 50%;
+}
+.user-area p.username{
+    color: #000;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+body{
+    background-color: #EEEDF2;
 }

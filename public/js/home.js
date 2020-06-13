@@ -75,10 +75,6 @@ configDropDown();
 
 
 
-
-
-
-
 // Cấu hình cho Dropdown category
 $(function(){
   $('.dropdown-profile > .dropdown-profile-name').on('click', function() {
@@ -88,7 +84,7 @@ $(function(){
   
   $('.dropdown-profile > .list > .item').on('click', function() {
     $('.dropdown-profile > .list > .item').removeClass('selected');
-    $(this).addClass('selected').parent().parent().removeClass('open').children('.dropdown-profile-name').text( $(this).text() );
+    // $(this).addClass('selected').parent().parent().removeClass('open').children('.dropdown-profile-name').text( $(this).text() );
   });
   
   $(document).on('keyup', function(evt) {
@@ -104,4 +100,8 @@ $(function(){
 
     }
   }); 
+
+
+  //Đặt sự kiện truy vấn website
+  $('.card-container').attr('onclick',"window.location.href='/item'");
 });

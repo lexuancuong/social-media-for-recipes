@@ -60,3 +60,9 @@ body{
 #btn-home p{
     color: #000;
 }
+#backbtn{
+    cursor: pointer;
+}
+#backbtn + p{
+    cursor: pointer;
+}
