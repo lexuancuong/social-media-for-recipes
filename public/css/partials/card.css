@@ -7,6 +7,9 @@
         left: 88%;
         /* right: 0; */
     }  
+    .btn i{
+        font-size: 2em;
+    }
 }
 
 /* If the screen size is 768px wide or less, set the font-size of <div> to 30px */
@@ -19,6 +22,9 @@
         left: 85%;
         /* right: 0; */
     }  
+    .btn i{
+        font-size: 1em;
+    }
 }
 div.card-container{
     cursor: pointer;
@@ -35,10 +41,11 @@ div.card-container{
     box-shadow: 0 0 0.2em 0 rgba(128, 128, 128, 0.7);
 }
 .text-card-area{
+    margin-top: 0.4em;
     width: 100%;
-    background-color: rgb(136, 96, 209, 0.1);
+    background: linear-gradient(to bottom, rgba(86,128,233,0.15), rgba(136,96,208,0.15));
     text-align: center;
-    padding: 0.1em 0 0.1em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 p.text-card{
     font-weight: 450;
@@ -64,18 +71,17 @@ p.text-card{
     border: none;
     cursor: pointer;
     width: 25%;
-    height: 100%;
-    padding-top: 0 !important;
+    height: 100% ;
+    padding-top: 0;
 }
 .img-item{
-    width: 1.6em !important;
-    height: 1.6em !important;
+    width: 100%;
+    height: 100%;
 }
 .list-item{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -83,7 +89,7 @@ p.text-card{
 
 }
 #btn-lotus::after{
-    content: "10";
+    content: "10 ";
     font-size: 0.7rem;
     display: block;
 }
@@ -148,7 +154,23 @@ p.text-card{
     text-align: center;
 }
 
+#btn-lotus-template{
+    font-size: 1.2rem;
+    width: 8em;
+}
 #btn-lotus-template::after{
+    font-size: 1em;
+    font-weight: 200;
     content: "Hoa Sen" !important;
     display: block;
+}
+
+#color-item{
+    background: linear-gradient(to right, rgba(86,128,233,0.7), rgba(136,96,208,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-bg-color{
+    background: linear-gradient(to right, rgba(86,128,233,0.1), rgba(136,96,208,0.1));
 }

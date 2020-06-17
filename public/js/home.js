@@ -10,7 +10,7 @@ let loadDataForOneDropdown = (name, array) =>{
   $(newDrName).text(`${name}`);
   $(newDropDownCategory).append(newDrName);
 
-  $(newDropDownCategory).append('<span class = "icon-category"> <img src="./svg/arrow.svg" /></span>');
+  $(newDropDownCategory).append('<span class = "icon-category"> <i class="fas fa-angle-down color-btn"></i></span>');
 
   let newList = $('<div class="list"/>'); 
   let n=array.length; 

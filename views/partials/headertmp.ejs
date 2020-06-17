@@ -4,7 +4,7 @@
     </div>
     <div class="search-area">
         <div class="search-area-prepend">
-          <span class="search-area-text" id="basic-addon1"><img src="./images/search.png"> </span>
+          <span class="search-area-text" id="basic-addon1"><img src="./images/search.jpg"> </span>
         </div>
         <input type="text" class="form-control" placeholder="Bạn đang tìm kiếm món ăn nào?" aria-label="Username" aria-describedby="basic-addon1">
     </div>
@@ -12,20 +12,20 @@
     <div class="center-area-nav">
       <div id = "noti-area">
         <div class="noti-content">
-          <div class="noti-content-name"> <img src = "./images/bell.png"> </div>
+          <div class="noti-content-name"> <i class="fa fa-bell" id = "btn-noti"></i></div>
             <div class="list">
-                    <div class="item">
-                      <img id = 'item-type' src = './images/comment.png'>
+                    <div class="item mypadding">
+                      <i id = 'color-item' class="fas fa-comments mysize"></i>
                       <p id="item-content">
                         Bạn có một đánh giá mời từ 
                         <span id = 'item-username'>CoCoCook</span>
                       </p>
                       <img id = 'item-avatar' src = './images/avatar.jpg'>
                     </div>
-                    <div class="item">
-                      <img id = 'item-type' src = './images/lotus.png'>
+                    <div class="item mypadding">
+                      <i id = 'color-item' class="fas fa-spa noti-lotus mysize"></i>
                       <p id="item-content">
-                        Bạn nhận được một hoa sen từ 
+                        Bạn nhận được một hoa sen từ
                         <span id = 'item-username'>CoCoCook</span>
                       </p>
                       <img id = 'item-avatar' src = './images/avatar.jpg'>
@@ -39,15 +39,15 @@
           <div class="dropdown-profile-name">Lê Xuân Cường</div>
           <div class="list">
               <div class="item" id="item-user" onclick="window.location.href='/myprofile'"> 
-                <img width="23" src="./images/user.png"> 
+                <i class="fa fa-user" id = 'ico'></i>
                 <p> Hồ sơ cá nhân</p>
               </div>
               <div class="item" id ='item-setting' onclick="window.location.href='/setting'"> 
-                <img width="23" src="./images/setting.png"> 
+                <i class="fa fa-cog" id = 'ico'></i>                
                 <p> Cài đặt</p>
               </div>
               <div class="item" id = "item-out" onclick="window.location.href='/logout'"> 
-                <img width="23" src="./images/signout.png"> 
+                <i class="fa fa-sign-out-alt" id = 'ico'></i>
                 <p> Thoát</p>
               </div>
             </div>

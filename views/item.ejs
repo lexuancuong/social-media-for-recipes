@@ -53,7 +53,7 @@
         <div class="main-area">
             <div class="container-info">
                 <!-- Phần header của chỉ mục item -->
-                <div class="tool-bar">
+                <div class="tool-bar my-bg-color">
                     <div class="left-tool-bar">
                         <p id="heading-tool-bar">
                             Bánh canh cua đồng
@@ -64,23 +64,22 @@
                         </div>
                     </div>
                     <div class="right-tool-bar">
-                            <button class="btn" id="btn-lotus"><img class = 'img-item' src="./images/lotus.png"></img></button>
-                            <button class="btn" id="btn-clock"><img class = 'img-item' src="./images/clock.png"></img></button>
-                            <button class="btn" id="btn-team"><img class = 'img-item' src="./images/team.png"></img></button>
-                            <button class="btn" id="btn-fire"><img class = 'img-item' src="./images/fire.png"></img></button>
-                            <img class = 'img-arrow' src="./svg/arrow.svg" />
+                        <button class="btn" id="btn-lotus"><i id = 'color-item' class="fas fa-spa"></i></button>
+                        <button class="btn" id="btn-clock"><i id = 'color-item' class="fas fa-clock"></i></button>
+                        <button class="btn" id="btn-team"><i id = 'color-item' class="fas fa-users"></i></button>
+                        <button class="btn" id="btn-fire"><i id = 'color-item' class="fas fa-fire-alt"></i></button>
                     </div>
                     </div>
 
                 <!-- Thêm Title cho phần thành phần  -->
-                <div class="header-area">
+                <div class="header-area my-bg-color">
                     <img src = "./images/hexagons.png" alt="Thành phần" />
                     <p>Thành Phần</p>
                 </div>
 
                 <!-- Thông tin phần thành phần  -->
 
-                <div class="ingredient-info">
+                <div class="ingredient-info ">
                     <div class="custom-check">
                         <input id="q3" name="h" type="checkbox" />
                         <label for="q3">Thành phần 1</label>
@@ -108,7 +107,7 @@
                 </div>
 
                 <!-- Các bước thực hiện -->
-                <div class="header-area">
+                <div class="header-area my-bg-color">
                     <img src = "./images/food_and_restaurant.png" alt="Thành phần" />
                     <p>Các bước thực hiện</p>
                 </div>
@@ -132,7 +131,7 @@
                 </div>
 
                 <!-- Thêm Title cho phần thành phần  -->
-                <div class="header-area">
+                <div class="header-area my-bg-color">
                     <img src = "./images/image.png" alt="Thành phần" />
                     <p>Kết quả</p>
                 </div>
@@ -152,7 +151,7 @@
             </div>
 
             <div class = "btn-add-new">
-                <button class="btn-hover color-3" onclick="window.location.href='/postrecipe'"></button>
+                <button class="btn-hover color-3" onclick="window.location.href='/postrecipe'"><i class="fas fa-plus" id ='ico-plus'></i></button>
                 <p>Tạo món ăn mới</p>
             </div>
         </div>

@@ -13,6 +13,7 @@
       margin-top: 25%;
   }
 }
+
 html{
   margin: 0 !important;
 }
@@ -26,17 +27,14 @@ body{
     box-sizing: border-box;
 }
 * {
-    font-family: Helvetica Neue !important;
+    font-family: Helvetica Neue;
 }
 
 .color1{
   background-color: rgb(red, green, blue);
 }
-.carousel-control .right, 
-.carousel-control .left 
-{
-     visibility:hidden !important;
-}    
+
+
 .container-fluid{
     padding: 0;
 }
