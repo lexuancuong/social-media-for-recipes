@@ -36,8 +36,6 @@ body{
     background: linear-gradient(to right, rgba(86,128,233,0.1), rgba(136,96,208,0.1));
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 1em;
-
 }
 .header p{
     margin: auto 0;
@@ -54,7 +52,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+    margin-top: 2%;
     margin-left: 3%;
     padding-right: 3%;
 }
@@ -108,4 +107,110 @@ hr {
     height: 1.5em;
     margin: auto 0;
     margin-right: 0.5em;
+}
+
+
+
+/* Cho việc nhập liệu */
+.input-container{
+	position:relative;
+    margin-bottom:25px;
+    width: 80%;
+    margin-top:1em;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:1em;
+	color:#000;	
+    pointer-event:none;
+	transition: all 0.2s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#000;
+  font-weight: bold;
+
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #5680E9;	
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+
+.container-info{
+    
+}
+
+
+
+/* Cài đặt cho phần cài đặt  */
+.change-area-open{
+    width: 60%;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(86,128,233,0.1), rgba(136,96,208,0.1));
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 1em;
+    box-shadow: inset 0 1px 2px 2px rgba(136,96,208, .1), inset 0 0 0 1px #C1C8E4;
+    margin-bottom: 1em;
+}
+
+
+/* Nút xong trong recommend */
+.recommend-btn{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.btn-recommend {
+    width: 8em;
+    height: 3em;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    margin-top: 0 !important;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-recommend:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-recommend:focus {
+    outline: none;
+}
+.btn-recommend.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 0.2em 0.9em 0 rgba(0, 0, 0, 0.7);
 }

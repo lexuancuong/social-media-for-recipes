@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("./partials/head") -%> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/greeting.css" rel="stylesheet">
-
     <title>Document</title>
 </head>
 <body>
-    <div class = "full-container">
+    <div class = "container-fluid">
     <!-- Navigation -->
-        <div class="nav-area">
-                <a href="/">
-                    <img src="./images/logo.png" height="50">
-                </a>
-                <button class="btn-hover color-3" onclick="window.location.href='/signup'">Đăng kí</button>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="/">
+                <img src="./images/logo.png" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-hover color-3" onclick="window.location.href='/signup'">Đăng kí</button>
+                    </li>
 
+                </ul>
+            </div>
         </div>
-    <!-- Carousel
+    </nav>
+    <!-- Carousel -->
     <div id = slides>
         <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
             <ol class="carousel-indicators">    
@@ -42,8 +62,8 @@
             </div>
             </div>
         </div>
-    </div> -->
-
+    </div>
+    <div class = 'caption col-md-12 col-sm-12'>
         <div class="container-area">
             <div id = "search-area">
                 <img id="search-image" src="./images/search.jpg">
@@ -66,26 +86,28 @@
                         </div>
                         <span class = "icon-group">
                         <img src="./svg/arrow.svg" />
-                        </span> 
+                        </span>
                     </div>
                 </div>
         
-
-                <div class="dropdown-category">
-                    <div class="dropdown-category-name">Loại món ăn </div>
-                    <div class="list">
-                            <div class="item">Bữa sáng</div>
-                            <div class="item">Bữa trưa</div>
-                            <div class="item">Bữa chiều</div>
-                            <div class="item">Khác</div>
-                        </div>
-                        <span class = "icon-category">
-                        <img src="./svg/arrow.svg" />
-                        </span>
+                <div class="category">
+                    <div class="dropdown-category">
+                        <div class="dropdown-category-name">Loại món ăn </div>
+                        <div class="list">
+                                <div class="item">Bữa sáng</div>
+                                <div class="item">Bữa trưa</div>
+                                <div class="item">Bữa tối</div>
+                                <div class="item">Khác</div>
+                            </div>
+                            <span class = "icon-category">
+                            <img src="./svg/arrow.svg" />
+                            </span>
+                    </div>
                 </div>
             </div>
         </div>
 
+    </div>  
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -94,4 +116,3 @@
 
 </body>
 </html>
-

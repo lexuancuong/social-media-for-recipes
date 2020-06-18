@@ -3,13 +3,15 @@
 <head>
     <%- include("./partials/head") -%> 
    
+    <link href="./css/home.css" rel="stylesheet">
     <link href="./css/partials/headertmp.css" rel="stylesheet">
     <link href="./css/partials/dropdown.css" rel="stylesheet">
     <link href="./css/partials/card.css" rel="stylesheet">
     <link href="./css/partials/button.css" rel="stylesheet">
+    <link href="./css/partials/checkbox.css" rel="stylesheet">
 
     <link href="./css/for-item.css" rel="stylesheet">
-    <link href="./css/comment.css" rel="stylesheet">
+    <!-- <link href="./css/comment.css" rel="stylesheet"> -->
 
 
     <script>
@@ -80,30 +82,41 @@
                 <!-- Thông tin phần thành phần  -->
 
                 <div class="ingredient-info ">
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
-                    <div class="custom-check">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Thành phần 1</label>
-                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>Thành phần 1</p>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>Thành phần 1</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <p>Thành phần 1</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">
+                        <p>Thành phần 1</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="checkbox">
+                        <p>Thành phần 1</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">
+                        <p>Thành phần 1</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+
                 </div>
 
                 <!-- Các bước thực hiện -->
@@ -112,22 +125,27 @@
                     <p>Các bước thực hiện</p>
                 </div>
                 <div class="ingredient-info">
-                    <div class="custom-check step-direction">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Combine milk with vinegar in a medium bowl and set aside for 5 minutes to "sour".</label>
-                    </div>
-                    <div class="custom-check step-direction">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk
-                            egg and butter into "soured" milk. Pour the flour mixture into the wet ingredients and whisk
-                            until lumps are gone.</label>
-                    </div>
-                    <div class="custom-check step-direction">
-                        <input id="q3" name="h" type="checkbox" />
-                        <label for="q3">Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk
-                            egg and butter into "soured" milk. Pour the flour mixture into the wet ingredients and whisk
-                            until lumps are gone.</label>
-                    </div>
+
+                    <label class="checkbox mywidth">
+                        <p>Combine milk with vinegar in a medium bowl and set aside for 5 minutes to "sour".</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="checkbox mywidth">
+                        <p></p>Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk
+                        egg and butter into "soured" milk. Pour the flour mixture into the wet ingredients and whisk
+                        until lumps are gone.</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox mywidth">
+                        <p>Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk
+                        egg and butter into "soured" milk. Pour the flour mixture into the wet ingredients and whisk
+                        until lumps are gone.</p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
 
                 <!-- Thêm Title cho phần thành phần  -->

@@ -5,6 +5,9 @@
     div#search-area{
         width: 45vw;
     }
+    .container-area{
+        margin-top: 5vh !important;
+    }
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -13,7 +16,7 @@
       font-size: 12px;
     }
     .container-area{
-        margin-top: 25%;
+        margin-top: 20vh !important;
     }
     div#search-area{
         width: 70vw;
@@ -45,7 +48,6 @@
     align-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 20vh;
     padding-left: 1%;
     padding-right: 1%;
 

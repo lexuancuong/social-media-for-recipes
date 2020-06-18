@@ -6,7 +6,6 @@
     <link href="./css/partials/headertmp.css" rel="stylesheet">
     <link href="./css/partials/dropdown.css" rel="stylesheet">
     <link href="./css/partials/card.css" rel="stylesheet">
-    <link href="./css/partials/button.css" rel="stylesheet">
     <link href="./css/partials/layout.css" rel="stylesheet">
 
     <link href="./css/setting.css" rel="stylesheet">
@@ -27,17 +26,44 @@
                         <p class="value-name" id="value-name">cococook@gmail.com</p> 
                     </div>
                     <div class="right">
-                        <button>Thay đổi</button>
+                        <button id = "btn-change-email">Thay đổi</button>
                     </div>
                 </div>
+                <div class="change-area-open" id = "change-email">
+                    <div class="input-container">
+                        <input type="text" required=""/>
+                        <label>Địa chỉ Email mới</label>        
+                    </div>
+                    <div class="input-container">
+                        <input type="password" required=""/>
+                        <label>Xác nhận mật khẩu</label>        
+                    </div>
 
+                    <div class="recommend-btn">
+                        <button class="btn-recommend color-3" style="margin-top: 1em;" onclick="window.location.href='/myrecipe'">Đổi</button>
+                    </div>
+                </div>
                 <div class="item-change">
                     <div class="left">
                         <p class="name">Password</p>
                         <p class="value-name" id="value-name">Mật khẩu tối thiểu có 6 kí tự</p> 
                     </div>
                     <div class="right">
-                        <button>Thay đổi</button>
+                        <button id = "btn-change-password">Thay đổi</button>
+                    </div>
+                </div>
+                <div class="change-area-open" id = "change-password">
+                    <div class="input-container">
+                        <input type="password" required=""/>
+                        <label>Nhập mật khẩu</label>        
+                    </div>
+                    <div class="input-container">
+                        <input type="password" required=""/>
+                        <label>Xác nhận mật khẩu</label>        
+                    </div>
+
+                    <div class="recommend-btn">
+                        <button class="btn-recommend color-3" style="margin-top: 1em;" onclick="window.location.href='/myrecipe'">Đổi</button>
                     </div>
                 </div>
                 <hr>
@@ -50,8 +76,8 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='./js/setting.js'></script>
     <script src='./js/home.js'></script>
-    <script src='./js/myprofile.js'></script>
     <script src='./js/header.js'></script>
 
 

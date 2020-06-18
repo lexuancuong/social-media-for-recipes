@@ -10,7 +10,7 @@
 
 
 
-.main-area{
+.main-area-recipe{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
