@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/signup.css" rel="stylesheet">
@@ -12,18 +18,42 @@
 </head>
 <body>
     <div class="full-container">
+            <!-- Carousel -->
+        <div id = slides>
+            <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+                <ol class="carousel-indicators">    
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item table .background active">
+                    <img class="d-block w-100" id ="layer" src="./images/picture/caro4.jpg"  alt="First slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro5.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro2.jpg" alt="Third slide">
+                </div>
+                </div>
+            </div>
+        </div>
+
         <div class="nav-area">
             <a href="/">
                 <img src="./images/logo.png" height="50">
             </a>
         </div>
-
-
-
-
         <div class="full-content">
             <div class="logo-area">
-            <img src="./images/Logo-big.png" alt="Cooking is easy">
+                <img src="./images/Logo-big.png" alt="Cooking is easy">
+                <p>Easy Looking, Easy Cooking</p>
             </div>
             <div class="content-signup">
                 <h1>ĐĂNG KÍ</h1>

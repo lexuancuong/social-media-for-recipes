@@ -24,6 +24,9 @@
     .full-container{
         height: 100vh;
     }
+    .logo-area p{
+        font-size: 1.4em;
+    }
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -47,11 +50,17 @@
     .full-container{
         height: fit-content;
     }
+    .logo-area p{
+        display: none;
+    }
+    #slides{
+        display: none;
+    }
   }
 .full-container{
     width: 100%;
     margin: 0;
-    background-image: url("../images/background.png");
+    /* background-image: url("../images/background.png"); */
 }
 .nav-area{
     padding: 0% 2% 0% 2%;
@@ -64,16 +73,36 @@
 
 }
 .nav-area a{
+    position: relative;
+
     margin-top: 1%;
     cursor: pointer;
     z-index: 1.1 !important;
 }
 .full-content{
+    position: relative;
     width: 100%;
     justify-content: center;
-
+    z-index: 1;
 }
 
 .content-signup h1{
     font-size: 2.5em;
+}
+#layer {
+
+    opacity: 0.1;
+ }
+
+.logo-area{
+    margin-top: 0;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ }
+.logo-area p{
+    font-weight: 100;
+    margin: auto 0;
+    margin-top: 0;
 }
