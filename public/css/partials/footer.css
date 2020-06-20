@@ -1,0 +1,98 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 768px) {
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .first-area{
+        width: 20%;
+    }
+    .my-area{
+        width: 20%;
+    }
+    .footer-container{
+        top: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .first-area{
+        width: 50%;
+    }
+    .my-area{
+        width: 50%;
+    }
+    .footer-container{
+        top: 450px;
+    }
+}
+
+.footer-container{
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 0.9;
+    width: 100%;
+    color: rgb(83, 83, 83);
+    background: linear-gradient(to right, rgba(86,128,233,0.5), rgba(136,96,208,0.5));
+}
+.first-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first-area p{
+    cursor: pointer;
+    font-size: 0.8em;
+    margin: 0 auto;
+}
+.first-area img{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+}
+.my-area p{
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+}
+.my-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 500;
+
+}
+
+.icon-container i{
+    margin-right: 1em;
+}
+.title{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+}
+.copy p{ 
+    font-size: 1em;
+    color: rgb(119, 120, 121);
+}
+

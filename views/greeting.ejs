@@ -10,104 +10,107 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/greeting.css" rel="stylesheet">
+
+    <link href="./css/partials/footer.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <div class = "container-fluid">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top ">
-        <div class="container-fluid">
-            <a class="navbar-branch" href="/">
-                <img src="./images/logo.png" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn-hover color-3" onclick="window.location.href='/signup'">Đăng kí</button>
-                    </li>
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top ">
+            <div class="container-fluid">
+                <a class="navbar-branch" href="/">
+                    <img src="./images/logo.png" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-hover color-3" onclick="window.location.href='/signup'">Đăng kí</button>
+                        </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Carousel -->
-    <div id = slides>
-        <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
-            <ol class="carousel-indicators">    
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-
-            </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item table .background active">
-                <img class="d-block w-100" id ="layer" src="./images/picture/caro1.jpg"  alt="First slide">
-            </div>
-            <div class="carousel-item table">
-                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro4.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item table">
-                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro5.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item table">
-                <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro2.jpg" alt="Third slide">
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class = 'caption col-md-12 col-sm-12'>
-        <div class="container-area">
-            <div id = "search-area">
-                <img id="search-image" src="./images/search.jpg">
-                <input type="text" id="my-input-search" placeholder="Bạn đang tìm kiếm món ăn nào?">
-            </div>
-            <div id ="text-area">
-                <p class="font-weight-light">Hoặc</p>
-                <p style="margin-top: -0.5em; color:#000" >Tìm kiếm theo loại món ăn?</p>
-            </div>
-            <div class="dropdown-area">
-                <div class="group-category">
-                    <div class="dropdown-group-category">
-                    <div class="dropdown-group-category-name">Nhóm loại món ăn </div>
-                        <div class="list">
-                            <div class="item">Nguyên liệu</div>
-                            <div class="item">Năng lượng</div>
-                            <div class="item">Thời gian</div>
-                            <div class="item">Loại món ăn</div>
-                            <div class="item">Quốc gia</div>
-                        </div>
-                        <span class = "icon-group">
-                        <img src="./svg/arrow.svg" />
-                        </span>
-                    </div>
+                    </ul>
                 </div>
-        
-                <div class="category" style="margin-top: 2%;">
-                    <div class="dropdown-category">
-                        <div class="dropdown-category-name">Loại món ăn </div>
-                        <div class="list">
-                                <div class="item">Bữa sáng</div>
-                                <div class="item">Bữa trưa</div>
-                                <div class="item">Bữa tối</div>
-                                <div class="item">Khác</div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <div id = slides>
+            <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+                <ol class="carousel-indicators">    
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item table .background active">
+                    <img class="d-block w-100" id ="layer" src="./images/picture/caro1.jpg"  alt="First slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro4.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro5.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item table">
+                    <img class="d-block w-100 bg-image" id ="layer" src="./images/picture/caro2.jpg" alt="Third slide">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = 'caption col-md-12 col-sm-12'>
+            <div class="container-area">
+                <div id = "search-area">
+                    <img id="search-image" src="./images/search.jpg">
+                    <input type="text" id="my-input-search" placeholder="Bạn đang tìm kiếm món ăn nào?">
+                </div>
+                <div id ="text-area">
+                    <p class="font-weight-light">Hoặc</p>
+                    <p style="margin-top: -0.5em; color:#000" >Tìm kiếm theo loại món ăn?</p>
+                </div>
+                <div class="dropdown-area">
+                    <div class="group-category">
+                        <div class="dropdown-group-category">
+                        <div class="dropdown-group-category-name">Nhóm loại món ăn </div>
+                            <div class="list">
+                                <div class="item">Nguyên liệu</div>
+                                <div class="item">Năng lượng</div>
+                                <div class="item">Thời gian</div>
+                                <div class="item">Loại món ăn</div>
+                                <div class="item">Quốc gia</div>
                             </div>
-                            <span class = "icon-category">
+                            <span class = "icon-group">
                             <img src="./svg/arrow.svg" />
                             </span>
+                        </div>
+                    </div>
+            
+                    <div class="category" style="margin-top: 2%;">
+                        <div class="dropdown-category">
+                            <div class="dropdown-category-name">Loại món ăn </div>
+                            <div class="list">
+                                    <div class="item">Bữa sáng</div>
+                                    <div class="item">Bữa trưa</div>
+                                    <div class="item">Bữa tối</div>
+                                    <div class="item">Khác</div>
+                                </div>
+                                <span class = "icon-category">
+                                <img src="./svg/arrow.svg" />
+                                </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>  
+        </div>  
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

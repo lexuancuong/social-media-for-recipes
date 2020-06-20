@@ -64,6 +64,9 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
+#slides{
+    overflow: hidden;
+}
 .font-weight-light{
     margin-top: 1em;
     color: #fff;

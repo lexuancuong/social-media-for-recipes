@@ -26,7 +26,7 @@ p#heading-tool-bar span{
     border: 1px solid #8860D0;
     position: relative;
     padding-left: 0.2em;
-    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    background-image: linear-gradient(to right, #667eea,#8E37D7);
     padding-right: 0.2em;
     color: white;
     top: -0.1em;
@@ -45,6 +45,8 @@ div.user-tool-bar{
 }
 p#username-toolbar{
     margin: auto 0;
+    width: fit-content;
+    display: inline;
 }
 img#avatar-toolbar {
     width: 2em;

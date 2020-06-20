@@ -77,3 +77,15 @@ app.get("/setting",function(req,res)
 {
     res.render('setting');
 });
+
+// Page for setting
+app.get("/404",function(req,res)
+{
+    res.render('404');
+});
+
+// Page for setting
+app.get("/admin",function(req,res)
+{
+    res.render('admin');
+});

@@ -4,6 +4,8 @@
     <%- include("./partials/head") -%> 
    
     <link href="./css/partials/headertmp.css" rel="stylesheet">
+    <link href="./css/partials/footer.css" rel="stylesheet">
+
     <link href="./css/partials/dropdown.css" rel="stylesheet">
     <link href="./css/partials/card.css" rel="stylesheet">
     <link href="./css/partials/button.css" rel="stylesheet">
@@ -24,11 +26,12 @@
                     <img id = 'avatar-image' src ="./images/avatar.jpg">
                     <div class="upload-image-area">
                         <img id = 'upload-image' src="./images/data.png">
-                        <p>Tải ảnh đại diện lên</p>
+                        <p>Tải ảnh đại diện lên </p>
                     </div>
                 </div>
 
-                <p class = "text text-3">Lê Xuân Cường</p>
+                <p class = "text text-3">Lê Xuân Cường </p>
+                <span id = 'check-admin' onclick="window.location.href='/admin'" >(Admin)</span>
             </div>
             <div class="introduce-area">
                 <p class="p-2nd">Một giới thiệu ngắn về bản thân bạn để mọi người có thể hiểu thêm về bạn</p>
@@ -45,6 +48,10 @@
         </div>
         
     </div>
+    <footer>
+        <%- include("./partials/footer") -%> 
+    </footer>
+    <script src='./js/myprofile.js'></script>
 
     <script src='./js/home.js'></script>
     <script src='./js/header.js'></script>

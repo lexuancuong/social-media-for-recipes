@@ -9,6 +9,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-bottom: 2%;
     }
     .content-container{
         display: flex;

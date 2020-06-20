@@ -60,5 +60,15 @@ $(function(){
         $('.menu').removeClass('open');
       }
     }); 
+
+
+    $(window).scroll(function() {
+      if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+          $('.btn-add-new').hide();
+      }
+      else{
+         $('.btn-add-new').show();
+      }
+   });
 });
 
